@@ -1,3 +1,4 @@
+import './NavBar.css';
 import logo from './assets/logo.svg';
 import CartWidget from '../CartWidget/CartWidget';
 /* bootstrap_react */
@@ -10,7 +11,7 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark " expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/" className="NavBar-brand">
           <img alt="logo" src={logo} width="30" height="30" className="d-inline-block align-top img-fluid " /> Freelo ECOM
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
